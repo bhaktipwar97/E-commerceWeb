@@ -30,7 +30,7 @@ const Home = () => {
 
         const { data } =
           await API.get(
-            "/listings"
+            "/products"
           );
 
         setProducts(data);
