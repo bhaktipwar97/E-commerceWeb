@@ -133,7 +133,7 @@ const Footer = () => {
 
             <p>
 
-              📞 +91 9876543210
+              📞 +91 xxxxxxxxxx
 
             </p>
 
