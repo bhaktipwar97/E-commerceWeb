@@ -413,7 +413,7 @@ const Cart = () => {
                 onClick={() =>
 
                   window.location.href =
-                  "/checkout"
+                  "/Checkout"
 
                 }
 
