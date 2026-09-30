@@ -81,7 +81,7 @@ const AddProduct = () => {
 
       <div className="w-full max-w-2xl bg-white rounded-3xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300">
 
-        <h1 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-cyan-500 to-blue-600 bg-clip-text text-transparent">
+        <h1 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-cyan-500 to-blue-600 bg-clip-text text-transparent ">
 
           Add Product
 
@@ -258,7 +258,6 @@ const AddProduct = () => {
             transition-all
 
             duration-300"
-
           >
 
             Add Product

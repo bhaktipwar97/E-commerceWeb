@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import API from "../services/api";
 import { useNavigate } from "react-router-dom";
+
 const Register = () => {
 
   const navigate = useNavigate();
@@ -21,21 +22,24 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    try {
+    console.log("FORM DATA:", formData);
 
+    try {
       const res = await API.post("/auth/register", formData);
 
+      console.log("RESPONSE:", res.data);
+
       alert("Registration Successful");
-
-      console.log(res.data);
-
       navigate("/login");
 
-    } catch (error) {
+    }  catch (error) {
+  console.log("FULL ERROR:", error);
+  console.log("ERROR MESSAGE:", error.message);
+  console.log("ERROR CODE:", error.code);
+  console.log("ERROR REQUEST:", error.request);
 
-      alert(error.response.data.message);
-
-    }
+  alert(error.message);
+}
   };
 
   return (
@@ -74,7 +78,7 @@ const Register = () => {
           onChange={handleChange}
         />
 
-        <button className="bg-black text-white w-full py-2 rounded">
+        <button className="bg-black text-white w-full py-2 rounded cursor-pointer">
           Register
         </button>
 

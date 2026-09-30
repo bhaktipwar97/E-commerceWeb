@@ -98,7 +98,7 @@ const Login = () => {
           onChange={handleChange}
         />
 
-        <button className="bg-black text-white w-full py-2 rounded">
+        <button className="bg-black text-white w-full py-2 rounded cursor-pointer">
           Login
         </button>
 
