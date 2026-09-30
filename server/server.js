@@ -16,7 +16,7 @@ const app = express();
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://e-commerceweb-3-5nqq.onrender.com"
+    "https://e-commerce-web-gdtf.vercel.app"
   ],
 }));
 
